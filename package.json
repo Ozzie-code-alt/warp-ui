@@ -1,15 +1,13 @@
 {
   "name": "@ozzie-code-alt/warp-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/ozzie-code-alt"
-  },
+
   "scripts": {
     "dev": "rollup -c --watch",
     "build": "rollup -c",
