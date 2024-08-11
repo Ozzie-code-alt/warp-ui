@@ -1,0 +1,23 @@
+{
+  "name": "@justin/warp-ui",
+  "version": "0.0.1",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {},
+  "author": "Justin Santos",
+  "license": "MIT",
+  "description": "In-House - Personalized Ui Library",
+  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.3.3",
+    "commonjs": "^0.0.1",
+    "rollup": "^4.20.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  }
+}
