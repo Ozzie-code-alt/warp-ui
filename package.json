@@ -1,13 +1,22 @@
 {
-  "name": "@justin/warp-ui",
-  "version": "0.0.1",
+  "name": "@ozzie-code-alt/warp-ui",
+  "version": "0.0.2",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "scripts": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ozzie-code-alt"
+  },
+  "scripts": {
+    "dev": "rollup -c --watch",
+    "build": "rollup -c",
+    "test": "jest --watchAll --verbose",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
   "author": "Justin Santos",
   "license": "MIT",
   "description": "In-House - Personalized Ui Library",
@@ -19,9 +28,13 @@
     "commonjs": "^0.0.1",
     "rollup": "^4.20.0",
     "rollup-plugin-dts": "^6.1.1",
+    "tslib": "^2.6.3",
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "react": "^18.3.1"
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "postcss": "^8.4.41",
+    "react": "^18.3.1",
+    "rollup-plugin-postcss": "^4.0.2"
   }
 }
