@@ -7,7 +7,9 @@
   "files": [
     "dist"
   ],
-
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ozzie-code-alt"
+  },
   "scripts": {
     "dev": "rollup -c --watch",
     "build": "rollup -c",
